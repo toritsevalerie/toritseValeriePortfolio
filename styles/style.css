@@ -1,0 +1,121 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px, 40px;
+}
+
+.nav-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-general,
+.nav-contact,
+.nav-resume {
+  padding: 10px;
+}
+.nav-general li,
+.nav-contact li,
+.nav-resume li {
+  list-style: none;
+  text-decoration-line: none;
+  margin: 10px 5px;
+}
+.nav-general li a,
+.nav-contact li a,
+.nav-resume li a {
+  text-decoration: none;
+  color: #1b1c1e;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-button,
+.project-button {
+  margin: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills .subheading {
+  text-align: center;
+}
+
+.skills .text-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.skills .text-container ul li {
+  list-style: none;
+}
+
+.projects .project-one,
+.projects .project-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 50px;
+}
+
+.projects .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 40px;
+}
+
+.projects .image-container,
+.projects .text-container {
+  width: 50%;
+}
+
+.contact p {
+  text-align: center;
+  padding: 10px 60px;
+}

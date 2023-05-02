@@ -1,0 +1,50 @@
+@import "variables";
+
+body {
+  font-family: $primaryFont;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px, 40px;
+}
+.nav-general {
+  display: flex;
+}
+.nav-general,
+.nav-contact,
+.nav-resume {
+  padding: 10px;
+  li {
+    list-style: none;
+    text-decoration-line: none;
+    margin: 10px 5px;
+    a {
+      text-decoration: none;
+      color: $colourBlack;
+    }
+  }
+}
+h1,
+h2 {
+  text-align: center;
+  font-family: $secondaryFont;
+  font-weight: 100;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.button-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+.resume-button,
+.project-button {
+  margin: 10px;
+}
