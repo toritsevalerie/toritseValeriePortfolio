@@ -104,6 +104,10 @@ h1 {
   padding: 40px 50px;
 }
 
+.arrow-icon {
+  height: 70px;
+}
+
 .projects .image-container img {
   max-width: 100%;
   max-height: 100%;
