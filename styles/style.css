@@ -119,3 +119,50 @@ h1 {
   text-align: center;
   padding: 10px 60px;
 }
+
+.contact-details ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-details ul li {
+  list-style: none;
+}
+.contact-details ul li a {
+  text-decoration: none;
+  margin: 10px 40px;
+  color: #1b1c1e;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: none;
+}
+
+textarea {
+  width: 400px;
+}
+
+.name-email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name-field,
+.email-field {
+  margin: 0px 10px;
+}
+
+.message-field {
+  margin: 10px 10px;
+}

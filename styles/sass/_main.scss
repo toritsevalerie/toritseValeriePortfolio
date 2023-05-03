@@ -1,3 +1,5 @@
+@import "variables";
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -38,4 +40,39 @@
 .contact p {
   text-align: center;
   padding: 10px 60px;
+}
+.contact-details {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        margin: 10px 40px;
+        color: $colourBlack;
+      }
+    }
+  }
+}
+form {
+  text-align: center;
+}
+label {
+  display: none;
+}
+textarea {
+  width: 400px;
+}
+.name-email-container {
+  display: flex;
+  justify-content: center;
+}
+.name-field,
+.email-field {
+  margin: 0px 10px;
+}
+.message-field {
+  margin: 10px 10px;
 }
