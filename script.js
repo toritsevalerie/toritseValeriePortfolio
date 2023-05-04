@@ -24,7 +24,7 @@ get(projectRef).then((snapshot) => {
     const individualProject = projectData.projects[id];
     console.log(individualProject);
     // append html to the page
-    // <div class="project-one">
+
     //         <div class="text-container">
     //           <p class="project-title">Project 1: Pronia Project</p>
     //           <p class="project-heading">HTML | CSS | SASS | JAVASCRIPT</p>
@@ -38,16 +38,87 @@ get(projectRef).then((snapshot) => {
     //         <div class="image-container">
     //           <img src="https://placebear.com/640/360" alt="" />
     //         </div>
-    //       </div>
 
+    // Storing json data/object items in variables
     const projectImage = individualProject.img;
     const projectImageAlt = individualProject.alt;
     const projectTitle = individualProject.title;
-    const projectSubheading = individualProject.projectSubheading;
+    const projectSubheading = individualProject.subheading;
     const projectDescription = individualProject.description;
     const projectLink = individualProject.link;
     const projectGit = individualProject.git;
     const projectArrowImage = individualProject.arrowImg;
     const projectArrowImageAlt = individualProject.arrowAlt;
+    const key = individualProject.id
+    console.log(key);
+
+    //Creating P elements & adding classes
+    const paraItemOne = document.createElement("p");
+    paraItemOne.className = "project-title";
+    const paraItemTwo = document.createElement("p");
+    paraItemTwo.className = "project-heading";
+    const paraItemThree = document.createElement("p");
+
+    //Creating BUTTONS
+    const liveButton = document.createElement("button");
+    const codeButton = document.createElement("button");
+    console.log(liveButton);
+    console.log(codeButton);
+
+    // Creating a IMG element to hold arrow image & project image
+    const arrow = document.createElement("img");
+    arrow.className = "arrow-icon";
+    const imgItem = document.createElement("img");
+
+    // Creating a DIV element and adding class name to the div
+    const divProjectItem = document.createElement('div')
+    divProjectItem.className = key
+    console.log(divProjectItem);
+    
+    const divItemOne = document.createElement("div");
+    divItemOne.className = "text-container";
+    const divItemTwo = document.createElement("div");
+    divItemTwo.className = "image-container";
+    const divItemThree = document.createElement("div");
+    divItemThree.className = "project-buttons";
+
+    //Assigning values to the elements
+
+    //P Elements
+    paraItemOne.innerHTML = projectTitle;
+    console.log(paraItemTwo);
+     console.log(paraItemOne);
+      console.log(paraItemThree);
+    paraItemTwo.innerHTML = projectSubheading;
+    paraItemThree.innerHTML = projectDescription;
+    //Button Elements
+    liveButton.innerHTML = 'View Live';
+    console.log(liveButton);
+    codeButton.innerHTML = 'View Code';
+    // IMG elements
+    arrow.src = projectArrowImage;
+    arrow.alt = projectArrowImageAlt;
+    imgItem.src = projectImage;
+    imgItem.alt = projectImageAlt;
+    
+
+    // Appending the project buttons to the div (divItemThree)
+    divItemThree.append(liveButton, codeButton);
+
+
+    // Appending the the main project image to a div (divItemTwo)
+    divItemTwo.append(imgItem)
+
+    // Appending the title, subheading, divItemThree and description (p) to a div (divItemOne)
+    divItemOne.append(paraItemOne,paraItemTwo,paraItemThree,divItemThree)
+
+    //Appending the divs and arrow to the project item 
+    divProjectItem.append(divItemOne,arrow,divItemTwo)
+
+
+
+    // Append to the project-one div that already exists on the page 
+
+    document.querySelector('#projects .container').append(divProjectItem)
   }
 });
