@@ -119,6 +119,6 @@ get(projectRef).then((snapshot) => {
 
     // Append to the project-one div that already exists on the page 
 
-    document.querySelector('#projects .container').append(divProjectItem)
+    document.querySelector('#projects .wrapper').append(divProjectItem)
   }
 });

@@ -4,7 +4,7 @@
       "img": "https://placebear.com/640/360",
       "arrowImg": "assets/arrow.png",
       "alt": "bear in water holding hand to its face",
-      "arrowAlt":"arrow image for button",
+      "arrowAlt": "arrow image for button",
       "title": "Pronia Project ",
       "subheading": "HTML | CSS | SASS | JAVASCRIPT",
       "description": "description goes here",
@@ -26,5 +26,13 @@
       "tag": "webdev",
       "id": "project-two"
     }
-  ]
+  ],
+  "contact-information": [
+    {
+      "name": "hi",
+      "email": "hi",
+      "message": "hi"
+
+    }
+]
 }
