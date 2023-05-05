@@ -3,8 +3,12 @@
 body {
   font-family: $primaryFont;
 }
+header {
+  background-color: $primaryGreen;
+}
 nav {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 0px, 40px;
@@ -19,7 +23,7 @@ nav {
   li {
     list-style: none;
     text-decoration-line: none;
-    margin: 10px 5px;
+    margin: 10px 1px;
     a {
       text-decoration: none;
       color: $colourBlack;
@@ -29,12 +33,24 @@ nav {
 h1,
 h2 {
   text-align: center;
-  font-family: $secondaryFont;
   font-weight: 100;
 }
 h1 {
-  font-size: 3rem;
-  font-weight: 100;
+  font-size: 16px;
+  font-family: $secondaryFont;
+  font-weight: 200;
+  text-align: center;
+}
+.title-section-one, .title-section-two, .title-section-three{ 
+  font-size: 9rem;
+  font-weight: 200;
+  text-align: right;
+  margin: 20px 0px;
+  //font-family: $secondaryFont;
+
+}
+.main-subheading { 
+  position: relative;
 }
 
 .button-container {
@@ -47,4 +63,76 @@ h1 {
 .resume-button,
 .project-button {
   margin: 10px;
+}
+
+.nav-resume,
+.nav-contact {
+  background-color: $secondaryGreen;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nav-resume li a,
+.nav-contact li a {
+  color: $greenishWhite;
+}
+
+.nav-home-button {
+  border: solid 2px $greenishWhite;
+  padding: 15px 24px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.nav-project-button {
+  border: solid 2px $greenishWhite;
+  padding: 15px 24px;
+}
+.nav-about-button {
+  border: solid 2px $greenishWhite;
+  padding: 15px 24px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  20% {
+    transform: translateX(-5px) rotate(5deg);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nav-resume .nav-resume {
+  transition: background-color 0.5s ease-in-out;
+}
+.nav-resume:hover {
+  animation: shake 0.5s;
+  background-color: $greenishWhite;
+  li a {
+    color: $secondaryGreen;
+  }
+}
+.nav-contact:hover {
+  animation: shake 0.5s;
+  background-color: $greenishWhite;
+  li a {
+    color: $secondaryGreen;
+  }
 }

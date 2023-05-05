@@ -17,7 +17,6 @@ const database = getDatabase(app);
 
 // Reference the location in the database
 const contactRef = ref(database, "/contact-information");
-console.log(contactRef);
 
 // handleSubmit function
 const formSubmit = (event) => {
