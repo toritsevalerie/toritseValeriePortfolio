@@ -5,8 +5,11 @@ body {
 }
 header {
   background-color: $primaryGreen;
+  //background-image: url(/assets/background.png);
+  
 }
 nav {
+  
   display: flex;
 
   justify-content: space-between;
@@ -23,7 +26,7 @@ nav {
   li {
     list-style: none;
     text-decoration-line: none;
-    margin: 10px 1px;
+    margin: 10px 5px;
     a {
       text-decoration: none;
       color: $colourBlack;
@@ -33,24 +36,23 @@ nav {
 h1,
 h2 {
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
 }
 h1 {
-  font-size: 16px;
-  font-family: $secondaryFont;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 2rem;
+  font-family: $primaryFont;
   font-weight: 200;
   text-align: center;
 }
-.title-section-one, .title-section-two, .title-section-three{ 
-  font-size: 9rem;
-  font-weight: 200;
-  text-align: right;
-  margin: 20px 0px;
-  //font-family: $secondaryFont;
 
-}
 .main-subheading { 
-  position: relative;
+  margin: 0px 100px;
+  text-align: center;
+  font-weight: 200;
+
 }
 
 .button-container {
@@ -135,4 +137,17 @@ h1 {
   li a {
     color: $secondaryGreen;
   }
+}
+
+.button-container{ 
+  padding: 20px ;
+}
+
+.resume-button, .project-button { 
+  background-color: $colourBlack;
+  font-family: $primaryFont;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 1px solid $greenishWhite;
+  color:$greenishWhite ;
 }

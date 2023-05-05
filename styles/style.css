@@ -297,7 +297,7 @@ nav {
 .nav-resume li {
   list-style: none;
   text-decoration-line: none;
-  margin: 10px 1px;
+  margin: 10px 5px;
 }
 .nav-general li a,
 .nav-contact li a,
@@ -309,25 +309,28 @@ nav {
 h1,
 h2 {
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h1 {
-  font-size: 16px;
-  font-family: "Cinzel", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
   font-weight: 200;
   text-align: center;
 }
 
-.title-section-one, .title-section-two, .title-section-three {
-  font-size: 9rem;
-  font-weight: 200;
-  text-align: right;
-  margin: 20px 0px;
-}
-
 .main-subheading {
-  position: relative;
+  margin: 0px 100px;
+  text-align: center;
+  font-weight: 200;
 }
 
 .button-container {
@@ -465,6 +468,19 @@ h1 {
   color: #50733f;
 }
 
+.button-container {
+  padding: 20px;
+}
+
+.resume-button, .project-button {
+  background-color: #1b1c1e;
+  font-family: "Raleway", sans-serif;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 1px solid #f5f5eb;
+  color: #f5f5eb;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 100%;
@@ -512,7 +528,21 @@ h1 {
 
 .projects .image-container,
 .projects .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
+}
+
+.projects {
+  background-image: url();
 }
 
 .contact p {
@@ -569,4 +599,22 @@ textarea {
 
 .message-field {
   margin: 10px 10px;
+}
+
+.project-title {
+  font-size: 20px;
+}
+
+.project-heading {
+  font-size: 18px;
+}
+
+.project-buttons button {
+  background-color: #1b1c1e;
+  font-family: "Raleway", sans-serif;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 1px solid #50733f;
+  color: #f5f5eb;
+  margin: 10px 10px 10px 0px;
 }
