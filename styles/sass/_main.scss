@@ -6,18 +6,17 @@
   margin: 0 auto;
 }
 
-
-.skills { 
+.skills {
   background-color: $decorativeWhite;
 }
-.skills ul { 
+.skills ul {
   margin: 0px;
 }
 
 .skills .subheading {
   text-align: center;
 }
-.skills .skill-icon-list{
+.skills .skill-icon-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -31,14 +30,15 @@
   flex-direction: column;
   align-items: center;
 }
-.projects h2, .skills h2, .contact h2 { 
-  padding: 30px 0px;
+.projects h2,
+.skills h2,
+.contact h2 {
+  padding: 100px 0px 30px 0px;
   font-weight: 500;
-  margin: 0px ;
+  margin: 0px;
   text-align: center;
 }
 .projects {
-  
 }
 
 .projects .project-one,
@@ -70,9 +70,14 @@
 .projects .image-container {
   padding-right: 50px;
 }
+.contact {
+  background-color: $greenishWhite;
+}
 .contact p {
-  text-align: center;
-  padding: 10px 60px;
+  text-align: left;
+  padding: 10px;
+  padding-right: 430px;
+  line-height: 23px;
 }
 .contact-details {
   ul {
@@ -89,21 +94,75 @@
     }
   }
 }
-form {
+.contact h2 {
+  font-weight: 500;
   text-align: center;
 }
-.contact button {
-  margin: 0 auto;
+form {
+  padding: 20px 0px 100px 0px;
+  text-align: left;
+  .form-title {
+    padding: 50px 10px 10px 10px;
+    text-align: left;
+  }
+  p {
+    margin: 0px;
+  }
+  button {
+    background-color: #1b1c1e;
+    font-family: "Raleway", sans-serif;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: 1px solid #50733f;
+    color: #f5f5eb;
+    margin: 10px 10px 10px 10px;
+  }
 }
+
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(5px);
+  
+}
+
 label {
-  display: none;
+  display: block;
+  padding: 10px 0px;
+}
+input {
+  width: 340px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
 }
 textarea {
-  width: 400px;
+  width: 700px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+input:hover {
+  outline: none;
+  border: 1px solid #555;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+textarea:hover {
+  outline: none;
+  border: 1px solid #555;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #555;
 }
 .name-email-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  width: 50%;
 }
 .name-field,
 .email-field {
@@ -135,19 +194,12 @@ textarea {
 }
 .arrow-icon {
   position: absolute;
-  
 }
 
-.contact h2 { 
-  padding: 30px 0px;
-  font-weight: 500;
-}
-.firebase-img-icon { 
+.firebase-img-icon {
   width: 36px;
 }
-.paired-programming-icon, .project-management-icon{ 
+.paired-programming-icon,
+.project-management-icon {
   width: 64px;
-}
-.ux-icon { 
-  background-color: $fadedGreen;
 }
