@@ -1,24 +1,44 @@
 @import "variables";
 
-
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
+
+.skills { 
+  background-color: $decorativeWhite;
+}
+.skills ul { 
+  margin: 0px;
+}
+
 .skills .subheading {
   text-align: center;
 }
-.skills .text-container ul {
+.skills .skill-icon-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
   justify-items: center;
   align-items: center;
   padding: 40px;
 }
-.skills .text-container ul li {
+.skills .skill-icon-list li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects h2, .skills h2, .contact h2 { 
+  padding: 30px 0px;
+  font-weight: 500;
+  margin: 0px ;
+  text-align: center;
+}
+.projects {
+  
 }
 
 .projects .project-one,
@@ -33,8 +53,8 @@
 }
 
 .projects .image-container img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 500px;
+  max-height: 350px;
   border-radius: 40px;
 }
 .projects .image-container,
@@ -44,8 +64,11 @@
   justify-content: center;
   width: 50%;
 }
-.projects { 
-  background-image: url();
+.projects .text-container {
+  padding-left: 150px;
+}
+.projects .image-container {
+  padding-right: 50px;
 }
 .contact p {
   text-align: center;
@@ -69,9 +92,9 @@
 form {
   text-align: center;
 }
-.contact button{ 
-    margin: 0 auto ;
-  }
+.contact button {
+  margin: 0 auto;
+}
 label {
   display: none;
 }
@@ -90,18 +113,41 @@ textarea {
   margin: 10px 10px;
 }
 
-.project-title { 
+.project-title {
   font-size: 20px;
 }
-.project-heading { 
+.project-heading {
   font-size: 18px;
 }
-.project-buttons button { 
+.project-buttons button {
   background-color: $colourBlack;
   font-family: $primaryFont;
   border-radius: 50px;
   padding: 15px 30px;
   border: 1px solid $secondaryGreen;
-  color:$greenishWhite ;
+  color: $greenishWhite;
   margin: 10px 10px 10px 0px;
+}
+.arrow-icon {
+  margin: auto 0;
+  background-color: $fadedGreen;
+  border-radius: 50px;
+}
+.arrow-icon {
+  position: absolute;
+  
+}
+
+.contact h2 { 
+  padding: 30px 0px;
+  font-weight: 500;
+}
+.firebase-img-icon { 
+  width: 36px;
+}
+.paired-programming-icon, .project-management-icon{ 
+  width: 64px;
+}
+.ux-icon { 
+  background-color: $fadedGreen;
 }

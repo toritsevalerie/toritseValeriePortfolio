@@ -15,11 +15,13 @@ const projectRef = ref(database, "/projects");
 get(projectRef).then((snapshot) => {
   // storing our project data as a variable
   const projectData = snapshot.val();
-
+  
   //loop through the array to render each array item on the page
-  for (let id in projectData.projects) {
+  for (let id in projectData) {
     //variable for each project object
-    const individualProject = projectData.projects[id];
+    const individualProject = projectData[id];
+    
+    
 
     // append html to the page
 
@@ -51,6 +53,7 @@ get(projectRef).then((snapshot) => {
     const projectArrowImage = individualProject.arrowImg;
     const projectArrowImageAlt = individualProject.arrowAlt;
     const key = individualProject.id;
+    const arrowKey = individualProject.arrowId;
 
     //Creating P elements & adding classes
     const paraItemOne = document.createElement("p");
@@ -65,7 +68,7 @@ get(projectRef).then((snapshot) => {
 
     // Creating a IMG element to hold arrow image & project image
     const arrow = document.createElement("img");
-    arrow.className = "arrow-icon";
+    arrow.className = 'arrow-icon';
     const imgItem = document.createElement("img");
 
     // Creating a DIV element and adding class name to the div
@@ -111,5 +114,6 @@ get(projectRef).then((snapshot) => {
     // Append to the project-one div that already exists on the page
 
     document.querySelector("#projects .wrapper").append(divProjectItem);
+    
   }
 });

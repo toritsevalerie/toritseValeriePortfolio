@@ -4,12 +4,14 @@ body {
   font-family: $primaryFont;
 }
 header {
-  background-color: $primaryGreen;
+  background-color: $greenishWhite;
   //background-image: url(/assets/background.png);
-  
+}
+.banner {
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 nav {
-  
   display: flex;
 
   justify-content: space-between;
@@ -35,37 +37,43 @@ nav {
 }
 h1,
 h2 {
-  text-align: center;
+  text-align: left;
   font-weight: 200;
+  padding: 0px 20px;
 }
 h1 {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   font-size: 2rem;
   font-family: $primaryFont;
-  font-weight: 200;
-  text-align: center;
+  font-weight: 500;
+  text-align: left;
+  color: $secondaryGreen;
+}
+.circle-text {
+  border-radius: 55%;
+  border: 2px solid black;
+  padding: 5px;
 }
 
-.main-subheading { 
-  margin: 0px 100px;
-  text-align: center;
-  font-weight: 200;
+//make underline slightly titled//
 
+.underline-text {
+  text-decoration: underline;
+  text-decoration-color: $secondaryGreen;
+}
+.main-subheading {
+  margin: 0px;
+  text-align: left;
+  font-weight: 200;
 }
 
 .button-container {
   display: flex;
 
-  justify-content: center;
+  justify-content: left;
 
   align-items: center;
 }
-.resume-button,
-.project-button {
-  margin: 10px;
-}
+
 
 .nav-resume,
 .nav-contact {
@@ -82,17 +90,17 @@ h1 {
 }
 
 .nav-home-button {
-  border: solid 2px $greenishWhite;
+  //border: solid 1px $colourBlack;
   padding: 15px 24px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 .nav-project-button {
-  border: solid 2px $greenishWhite;
+  //border: solid 1px $colourBlack;
   padding: 15px 24px;
 }
 .nav-about-button {
-  border: solid 2px $greenishWhite;
+  //border: solid 1px $colourBlack;
   padding: 15px 24px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -139,15 +147,61 @@ h1 {
   }
 }
 
-.button-container{ 
-  padding: 20px ;
+.button-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.fa-arrow-down-long { 
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.resume-button, .project-button { 
-  background-color: $colourBlack;
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px); 
+  }
+}
+
+
+.button-container .project-button {
   font-family: $primaryFont;
   border-radius: 50px;
-  padding: 15px 30px;
+  padding: 30px 0px;
   border: 1px solid $greenishWhite;
-  color:$greenishWhite ;
+  color: $colourBlack;
+  font-size: 20px;
+}
+.project-button {
+  list-style: none;
+}
+.project-button a {
+  color: $colourBlack;
+  text-decoration: none;
+}
+.about-me-container {
+  display: flex;
+
+  .about-me-text-container {
+    align-self: center;
+  }
+  .about-me-image-container {
+    justify-content: center;
+
+    border-radius: 300px;
+
+    img {
+      width: 300px;
+      padding: 30px;
+      border-radius: 300px;
+      background-color: $fadedGreen;
+    }
+  }
 }

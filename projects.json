@@ -11,7 +11,8 @@
       "link": "https://neon-medovik-43961c.netlify.app/",
       "git": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
       "tag": "webdev",
-      "id": "project-one"
+      "id": "project-one",
+      "arrow-id": "arrow-icon-one"
     },
     {
       "img": "https://placebear.com/640/360",
@@ -24,7 +25,8 @@
       "link": "https://neon-medovik-43961c.netlify.app/",
       "git": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
       "tag": "webdev",
-      "id": "project-two"
+      "id": "project-two",
+      "arrow-id": "arrow-icon-two"
     }
   ],
   "contact-information": [
