@@ -5,12 +5,6 @@ import {
   push,
 } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 
-/* 
-STRETCH GOALS: 
-1.Handle errors if users did not fill in all three fields correctly 
-2. When user submits turn button into a thank you then after a few seconds bring normal submit button back
-3. Send Email notification if i get a new message in the form 
- */
 
 //Reference to the database
 const database = getDatabase(app);
@@ -53,3 +47,11 @@ const inputValue = () => {
 
 // Event listener on the form to listen for when the submit button is clicked
 document.querySelector("form").addEventListener("submit", formSubmit);
+
+
+/* 
+STRETCH GOALS: 
+1.Handle errors if users did not fill in all three fields correctly 
+2. When user submits turn button into a thank you then after a few seconds bring normal submit button back or something like that 
+3. Send Email notification if i get a new message in the form 
+ */

@@ -1,0 +1,119 @@
+@import "variables";
+
+label {
+  display: block;
+  padding: 10px 0px;
+}
+input {
+  width: 340px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+textarea {
+  width: 700px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+input:hover {
+  outline: none;
+  border: 1px solid #555;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+textarea:hover {
+  outline: none;
+  border: 1px solid #555;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+.name-email-container {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+}
+.name-field,
+.email-field {
+  margin: 0px 10px;
+}
+.message-field {
+  margin: 10px 10px;
+}
+
+.form-contact-container {
+  display: flex;
+}
+
+footer {
+  background-color: $fadedGreen;
+  p {
+    text-align: center;
+    background-color: $fadedGreen;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 1220px) {
+  form {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  form {
+    margin: 20px;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    margin: 5px;
+    text-align: center;
+  }
+  .name-email-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  form .form-title {
+    text-align: center;
+  }
+  input {
+    width: 500px;
+  }
+  textarea {
+    width: 500px;
+  }
+  .contact p {
+    padding: 10px 90px;
+    text-align: center;
+  }
+  .contact-details ul {
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    gap: 20px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 560px) {
+  input {
+    width: 400px;
+  }
+  textarea {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  input {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
+  }
+}

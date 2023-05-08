@@ -38,7 +38,13 @@
   margin: 0px;
   text-align: center;
 }
-.projects {
+.firebase-img-icon {
+  width: 36px;
+}
+
+.paired-programming-icon,
+.project-management-icon {
+  width: 64px;
 }
 
 .projects .project-one,
@@ -46,7 +52,7 @@
   display: flex;
   justify-content: center;
 
-  padding: 40px 50px;
+  padding: 40px 50px 80px 50px;
 }
 .arrow-icon {
   height: 70px;
@@ -70,25 +76,57 @@
 .projects .image-container {
   padding-right: 50px;
 }
+.project-title {
+  font-size: 20px;
+}
+.project-heading {
+  font-size: 18px;
+}
+.project-buttons button {
+  background-color: $colourBlack;
+  font-family: $primaryFont;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 1px solid $secondaryGreen;
+
+  margin: 10px 10px 10px 0px;
+  a {
+    color: $greenishWhite;
+    text-decoration: none;
+  }
+}
+.arrow-icon {
+  margin: auto 0;
+  background-color: $fadedGreen;
+  border-radius: 50px;
+}
+.arrow-icon {
+  position: absolute;
+}
 .contact {
   background-color: $greenishWhite;
 }
 .contact p {
   text-align: left;
-  padding: 10px;
-  padding-right: 430px;
+  padding: 10px 520px 10px 10px;
+
   line-height: 23px;
 }
 .contact-details {
   ul {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    width: fit-content;
+    padding: 10px 0px;
+    padding: 0px 10px;
     li {
       list-style: none;
 
       a {
         text-decoration: none;
-        margin: 10px 40px;
+        margin: 10px 0px;
+
         color: $colourBlack;
       }
     }
@@ -124,82 +162,46 @@ button:hover {
 }
 button:active {
   transform: translateY(5px);
-  
 }
 
-label {
-  display: block;
-  padding: 10px 0px;
+@media (max-width: 1200px) {
+  .projects .text-container {
+    padding-left: 50px;
+  }
 }
-input {
-  width: 340px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
+@media (max-width: 800px) {
+  .projects .project-one .image-container,
+  .projects .project-one .arrow-icon,
+  .projects .project-two .image-container,
+  .projects .project-two .arrow-icon {
+    display: none;
+  }
+  .projects .text-container {
+    padding-left: 0px;
+    border: 1px solid $secondaryGreen;
+    border-radius: 5px;
+    width: auto;
+  }
+  .project-two p,
+  .project-one p,
+  .project-title,
+  .project-heading,
+  .project-buttons {
+    padding: 10px 50px;
+    text-align: center;
+  }
 }
-textarea {
-  width: 700px;
-  border: none;
-  background-color: white;
-  border-radius: 5px;
-}
-input:hover {
-  outline: none;
-  border: 1px solid #555;
-}
-input:focus {
-  outline: none;
-  border: 1px solid #555;
-}
-textarea:hover {
-  outline: none;
-  border: 1px solid #555;
-}
-textarea:focus {
-  outline: none;
-  border: 1px solid #555;
-}
-.name-email-container {
-  display: flex;
-  justify-content: start;
-  width: 50%;
-}
-.name-field,
-.email-field {
-  margin: 0px 10px;
-}
-.message-field {
-  margin: 10px 10px;
+@media (max-width: 600px) {
+  .skills .skill-icon-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills .subheading {
+    padding: 0px 20px;
+  }
 }
 
-.project-title {
-  font-size: 20px;
-}
-.project-heading {
-  font-size: 18px;
-}
-.project-buttons button {
-  background-color: $colourBlack;
-  font-family: $primaryFont;
-  border-radius: 50px;
-  padding: 15px 30px;
-  border: 1px solid $secondaryGreen;
-  color: $greenishWhite;
-  margin: 10px 10px 10px 0px;
-}
-.arrow-icon {
-  margin: auto 0;
-  background-color: $fadedGreen;
-  border-radius: 50px;
-}
-.arrow-icon {
-  position: absolute;
-}
-
-.firebase-img-icon {
-  width: 36px;
-}
-.paired-programming-icon,
-.project-management-icon {
-  width: 64px;
+@media (max-width: 450px) {
+  .skills .skill-icon-list {
+    grid-template-columns: 1fr;
+  }
 }

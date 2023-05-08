@@ -65,6 +65,14 @@ get(projectRef).then((snapshot) => {
     //Creating BUTTONS
     const liveButton = document.createElement("button");
     const codeButton = document.createElement("button");
+    console.log(liveButton);
+
+    //Creating <a> elements for the buttons
+    const liveLink = document.createElement('a')
+    liveLink.href = projectLink
+    const gitCode = document.createElement("a");
+    gitCode.href = projectGit;
+    
 
     // Creating a IMG element to hold arrow image & project image
     const arrow = document.createElement("img");
@@ -89,15 +97,22 @@ get(projectRef).then((snapshot) => {
 
     paraItemTwo.innerHTML = projectSubheading;
     paraItemThree.innerHTML = projectDescription;
-    //Button Elements
-    liveButton.innerHTML = "View Live";
+    //a elements 
+    liveLink.innerHTML = "View Live";
+    liveLink.target = "_blank";
 
-    codeButton.innerHTML = "View Code";
+    gitCode.innerHTML = "View Code";
+    gitCode.target="_blank";
     // IMG elements
     arrow.src = projectArrowImage;
     arrow.alt = projectArrowImageAlt;
     imgItem.src = projectImage;
     imgItem.alt = projectImageAlt;
+
+    //Appending a elements to the buttons 
+    liveButton.append(liveLink);
+    codeButton.append(gitCode);
+    
 
     // Appending the project buttons to the div (divItemThree)
     divItemThree.append(liveButton, codeButton);
@@ -117,3 +132,11 @@ get(projectRef).then((snapshot) => {
     
   }
 });
+
+/* 
+STRETCH GOALS: 
+1. re design the projects section 
+2.redesign form and footer section 
+3. on scroll turn menu into hamburger menu 
+4. create a more indepth about section  
+ */
