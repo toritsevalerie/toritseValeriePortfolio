@@ -1,9 +1,11 @@
+// Projects Section of Portfolio
+
 import app from "./firebaseConfig.js";
 import {
   getDatabase,
   ref,
   get,
-} from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+} from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"; // reminder: change app to database in this url
 
 // reference to the database
 const database = getDatabase(app);
@@ -15,13 +17,11 @@ const projectRef = ref(database, "/projects");
 get(projectRef).then((snapshot) => {
   // storing our project data as a variable
   const projectData = snapshot.val();
-  
+
   //loop through the array to render each array item on the page
   for (let id in projectData) {
     //variable for each project object
     const individualProject = projectData[id];
-    
-    
 
     // append html to the page
 
@@ -30,6 +30,7 @@ get(projectRef).then((snapshot) => {
             <div class="text-container">
               <p class="project-title">Project 1: Pronia Project</p>
               <p class="project-heading">HTML | CSS | SASS | JAVASCRIPT</p>
+              <p class="project-type"> WebDev <p>
               <p>description goes here</p>
               <div class="project-buttons">
                 <button>View Live</button>
@@ -48,12 +49,11 @@ get(projectRef).then((snapshot) => {
     const projectTitle = individualProject.title;
     const projectSubheading = individualProject.subheading;
     const projectDescription = individualProject.description;
+    // const projectType = individualProject.
     const projectLink = individualProject.link;
     const projectGit = individualProject.git;
-    const projectArrowImage = individualProject.arrowImg;
-    const projectArrowImageAlt = individualProject.arrowAlt;
+
     const key = individualProject.id;
-    const arrowKey = individualProject.arrowId;
 
     //Creating P elements & adding classes
     const paraItemOne = document.createElement("p");
@@ -68,15 +68,14 @@ get(projectRef).then((snapshot) => {
     console.log(liveButton);
 
     //Creating <a> elements for the buttons
-    const liveLink = document.createElement('a')
-    liveLink.href = projectLink
+    const liveLink = document.createElement("a");
+    liveLink.href = projectLink;
     const gitCode = document.createElement("a");
     gitCode.href = projectGit;
-    
 
     // Creating a IMG element to hold arrow image & project image
     const arrow = document.createElement("img");
-    arrow.className = 'arrow-icon';
+    // arrow.className = 'arrow-icon';
     const imgItem = document.createElement("img");
 
     // Creating a DIV element and adding class name to the div
@@ -97,22 +96,21 @@ get(projectRef).then((snapshot) => {
 
     paraItemTwo.innerHTML = projectSubheading;
     paraItemThree.innerHTML = projectDescription;
-    //a elements 
-    liveLink.innerHTML = "View Live";
+    //a elements
+    liveLink.innerHTML = "Live Site";
     liveLink.target = "_blank";
 
-    gitCode.innerHTML = "View Code";
-    gitCode.target="_blank";
+    gitCode.innerHTML = "GitHub";
+    gitCode.target = "_blank";
     // IMG elements
-    arrow.src = projectArrowImage;
-    arrow.alt = projectArrowImageAlt;
+    // arrow.src = projectArrowImage;
+    // arrow.alt = projectArrowImageAlt;
     imgItem.src = projectImage;
     imgItem.alt = projectImageAlt;
 
-    //Appending a elements to the buttons 
+    //Appending a elements to the buttons
     liveButton.append(liveLink);
     codeButton.append(gitCode);
-    
 
     // Appending the project buttons to the div (divItemThree)
     divItemThree.append(liveButton, codeButton);
@@ -129,14 +127,22 @@ get(projectRef).then((snapshot) => {
     // Append to the project-one div that already exists on the page
 
     document.querySelector("#projects .wrapper").append(divProjectItem);
-    
   }
 });
 
 /* 
 STRETCH GOALS: 
-1. re design the projects section 
-2.redesign form and footer section 
-3. on scroll turn menu into hamburger menu 
-4. create a more indepth about section  
+1. Re design the projects section (take away arrow, add project type: design, webdev etc, add other projects)
+2. Footer - add social media icons 
+3. Add About Section is contact form area 
+4. Add side nav (like jess) when users can't see navigation after scrolling (on scroll turn menu into hamburger like menu)
+4.5. Add mobile navigation function on click drop down menu 
+5. Loading state on submit to indicate submission has been made 
+6. Icon Profile Image (draw myself)
+7. FavIcon ADD! 
+8. Add light & dark mode toggle 
+9. Fix spacing in skills&tools, more centered 
+10. View Projects (make the word View projects bounce too)
+11. Skills & Tools, UX/UI design make space between icon and words 
+12. Change the url name to toritsevalerietuedor.com
  */
