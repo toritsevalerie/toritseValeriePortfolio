@@ -136,6 +136,7 @@ STRETCH GOALS:
 2. Footer - add social media icons 
 3. Add About Section is contact form area 
 4. Add side nav (like jess) when users can't see navigation after scrolling (on scroll turn menu into hamburger like menu)
+3. ADD READ ME FILE TO THIS AND OTHER REPOSITORIES + READ ME FILE PROFILE 
 4.5. Add mobile navigation function on click drop down menu 
 5. Loading state on submit to indicate submission has been made 
 6. Icon Profile Image (draw myself)

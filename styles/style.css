@@ -687,6 +687,10 @@ h1 {
   padding: 40px 50px 80px 50px;
 }
 
+.projects p {
+  line-height: 22px;
+}
+
 .arrow-icon {
   height: 70px;
 }

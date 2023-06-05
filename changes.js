@@ -20,6 +20,11 @@ const projectUpdates = () => {
   updates[`/${projectIndex}/subheading`] = "React | CSS | JSX";
   updates[`/${projectIndex}/description`] =
     "A React app made with other developers that allows users to discover foreign movies, users can search using their preferred movies as references and save their searches along with favorite movies for future reference";
+    updates[`/${projectIndex}/git`] =
+      "https://github.com/francella-toritse-wilson/the-film-factory";
+       updates[`/${projectIndex}/link`] =
+         "https://ftw-project-four.netlify.app/";
+      
 
   update(projectRef, updates)
     .then(() => {
