@@ -677,7 +677,8 @@ h1 {
 }
 
 .projects .project-one,
-.projects .project-two {
+.projects .project-two,
+.projects .project-three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,10 +690,6 @@ h1 {
 
 .projects p {
   line-height: 22px;
-}
-
-.arrow-icon {
-  height: 70px;
 }
 
 .projects .image-container img {

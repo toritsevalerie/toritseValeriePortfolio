@@ -48,17 +48,15 @@
 }
 
 .projects .project-one,
-.projects .project-two {
+.projects .project-two,
+.projects .project-three {
   display: flex;
   justify-content: center;
 
   padding: 40px 50px 80px 50px;
 }
-.projects p { 
+.projects p {
   line-height: 22px;
-}
-.arrow-icon {
-  height: 70px;
 }
 
 .projects .image-container img {
