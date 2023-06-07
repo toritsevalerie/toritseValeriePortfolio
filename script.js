@@ -75,7 +75,7 @@ get(projectRef).then((snapshot) => {
 
     // Creating a IMG element to hold arrow image & project image
     const arrow = document.createElement("img");
-    // arrow.className = 'arrow-icon';
+    
     const imgItem = document.createElement("img");
 
     // Creating a DIV element and adding class name to the div
@@ -103,8 +103,6 @@ get(projectRef).then((snapshot) => {
     gitCode.innerHTML = "GitHub";
     gitCode.target = "_blank";
     // IMG elements
-    // arrow.src = projectArrowImage;
-    // arrow.alt = projectArrowImageAlt;
     imgItem.src = projectImage;
     imgItem.alt = projectImageAlt;
 
@@ -121,8 +119,8 @@ get(projectRef).then((snapshot) => {
     // Appending the title, subheading, divItemThree and description (p) to a div (divItemOne)
     divItemOne.append(paraItemOne, paraItemTwo, paraItemThree, divItemThree);
 
-    //Appending the divs and arrow to the project item
-    divProjectItem.append(divItemOne, arrow, divItemTwo);
+    //Appending the divs to the project item
+    divProjectItem.append(divItemOne, divItemTwo);
 
     // Append to the project-one div that already exists on the page
 
@@ -136,6 +134,7 @@ STRETCH GOALS:
 2. Footer - add social media icons 
 3. Add About Section is contact form area 
 4. Add side nav (like jess) when users can't see navigation after scrolling (on scroll turn menu into hamburger like menu)
+3. ADD READ ME FILE TO THIS AND OTHER REPOSITORIES + READ ME FILE PROFILE 
 4.5. Add mobile navigation function on click drop down menu 
 5. Loading state on submit to indicate submission has been made 
 6. Icon Profile Image (draw myself)
