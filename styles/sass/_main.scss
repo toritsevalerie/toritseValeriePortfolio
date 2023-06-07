@@ -22,7 +22,7 @@
   gap: 30px;
   justify-items: center;
   align-items: center;
-  padding: 40px;
+  padding: 40px 40px 100px 40px;
 }
 .skills .skill-icon-list li {
   list-style: none;
@@ -107,65 +107,86 @@
 .arrow-icon {
   position: absolute;
 }
-.about-contact {
-  display: flex;
-}
 .about-me {
+  // background-color: $decorativeWhite;
+}
+.about-me .about-me-section-container {
   display: flex;
-  
-  max-width: 50%;
+  padding-bottom: 100px;
+}
 
-  .about-me-image-container {
-    width: 50%;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+.about-me h2 {
+    font-weight: bold;
+    
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    justify-content: center;
   }
-  .about-me-text-container {
-    width: 50%;
-    height: 502px;
-    padding: 20px 5px;
-    background-color: $fadedGreen;
-    h2 {
-      font-weight: bold;
-      padding: 0px 15px 0px 15px;
-      text-align: center;
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-    p {
-      width: 100%;
-      padding: 0px 15px 10px 15px;
-      text-align: center;
-      line-height: 30px;
-      
-    }
-    button {
-      background-color: $colourBlack;
-      font-family: $primaryFont;
-      border-radius: 50px;
-      padding: 15px 30px;
-      border: 1px solid $secondaryGreen;
-      margin: 0 auto;
+  .pronounciation { 
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+  }
 
-      a {
-        color: $greenishWhite;
-        text-decoration: none;
-      }
+.about-me-section-image-container {
+  width: 40%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
+}
+
+.about-me-section-text-container {
+  width: 60%;
+  height: 502px;
+  // padding: 100px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  p {
+    width: 100%;
+    padding: 0px 15px 10px 15px;
+    text-align: left;
+    line-height: 30px;
+  }
+  a {
+    color: $secondaryGreen;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  button {
+    background-color: $colourBlack;
+    font-family: $primaryFont;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 1px solid $secondaryGreen;
+    margin: 0 auto;
+
+    a {
+      color: $greenishWhite;
+      text-decoration: none;
     }
   }
 }
 
 .contact {
   background-color: $greenishWhite;
-  max-width: 50%;
-
+  // max-width: 50%;
 }
 .contact p {
   text-align: left;
-  padding: 10px 20px 10px 30px;
-
+  padding: 10px 400px 10px 10px;
+  margin: 0px 20px 20px 0px;
   line-height: 23px;
 }
 .contact-details {
@@ -175,7 +196,7 @@
     gap: 5px;
     width: fit-content;
     padding: 10px 0px;
-    padding: 0px 20px;
+    padding: 0px 5px;
     li {
       list-style: none;
 
@@ -192,15 +213,13 @@
   font-weight: 500;
   text-align: center;
 }
+
 form {
-  padding: 20px 0px 5px 0px;
+  padding: 100px 0px 100px 0px;
   text-align: left;
   .form-title {
-    padding: 5px 10px 10px 30px;
+    padding: 0px 10px 10px 10px;
     text-align: left;
-  }
-  p {
-    margin: 0px;
   }
   button {
     background-color: #1b1c1e;
@@ -209,7 +228,7 @@ form {
     padding: 15px 30px;
     border: 1px solid #50733f;
     color: #f5f5eb;
-    margin: 10px 10px 10px 30px;
+    margin: 10px 10px 10px 10px;
   }
 }
 
