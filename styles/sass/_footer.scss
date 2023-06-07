@@ -3,22 +3,22 @@
 label {
   display: block;
   padding: 10px 0px;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 input {
-  width: 235px;
+  width: 340px;
   height: 30px;
   border: none;
   border-radius: 5px;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 textarea {
-  width: 500px;
-  height: 100px;
+  width: 700px;
+  height: 250px;
   border: none;
   background-color: white;
   border-radius: 5px;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 input:hover {
   outline: none;
@@ -57,7 +57,7 @@ footer {
   
   p {
     text-align: center;
-    background-color: $secondaryGreen;
+    background-color: $fadedGreen;
     margin: 0;
     padding: 20px 0;
   }
