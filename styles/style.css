@@ -776,6 +776,7 @@ h1 {
   text-align: center;
   font-style: italic;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .about-me-section-image-container {
@@ -819,6 +820,9 @@ h1 {
   padding: 0px 15px 10px 15px;
   text-align: left;
   line-height: 30px;
+}
+.about-me-section-text-container p span {
+  font-style: italic;
 }
 .about-me-section-text-container a {
   color: #50733f;
