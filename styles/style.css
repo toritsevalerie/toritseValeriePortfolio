@@ -272,6 +272,43 @@ header {
   display: none;
 }
 
+.drop-down-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b1c0a0;
+  width: 100%;
+}
+.drop-down-menu ul {
+  padding: 0px;
+}
+.drop-down-menu li {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.drop-down-menu a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.drop-down-nav li {
+  margin: 0px 0px 10px 0px;
+}
+
+.drop-down-menu li :hover {
+  color: white;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,12 +638,19 @@ h1 {
 }
 @media (max-width: 630px) {
   .nav-general,
-  .nav-resume,
-  .nav-contact {
+  .nav-contact,
+  .nav-resume {
     display: none;
   }
   nav {
     padding: 20px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hamburger-menu {
     display: block;
@@ -904,16 +948,49 @@ button:active {
           transform: translateY(5px);
 }
 
+@media (max-width: 1230px) {
+  .about-me-section-text-container {
+    padding-left: 30px;
+  }
+}
 @media (max-width: 1200px) {
   .projects .text-container {
     padding-left: 50px;
   }
 }
+@media (max-width: 1200px) {
+  .about-me-section-image-container img {
+    width: 333px;
+    height: 333px;
+  }
+}
+@media (max-width: 1000px) {
+  .about-me-section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me-section-container .about-me-section-text-container {
+    padding-left: 0px;
+  }
+  .about-me-section-container p {
+    text-align: center;
+  }
+}
 @media (max-width: 800px) {
   .projects .project-one .image-container,
-  .projects .project-one .arrow-icon,
   .projects .project-two .image-container,
-  .projects .project-two .arrow-icon {
+  .projects .project-three .image-container {
     display: none;
   }
   .projects .text-container {
@@ -922,13 +999,30 @@ button:active {
     border-radius: 5px;
     width: auto;
   }
+  .projects .project-three .text-container {
+    background: url(/assets/musicScapeimg.png);
+  }
+  .projects .project-one .text-container {
+    background: url(/assets/proniaImg.png);
+  }
+  .projects .project-two .text-container {
+    background: url(/assets/filmFactoryImg.png);
+  }
   .project-two p,
   .project-one p,
+  .project-three p,
   .project-title,
   .project-heading,
   .project-buttons {
     padding: 10px 50px;
     text-align: center;
+  }
+}
+@media (max-width: 624px) {
+  .about-me .about-me-section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 @media (max-width: 600px) {

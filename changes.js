@@ -15,17 +15,17 @@ const projectRef = ref(database, "/projects");
 
 const projectThree = () => {
   const updates = {};
-  const projectIndexThree = "0";
+  const projectIndexOne = "0";
 
-  updates[`/${projectIndexThree}/title`] = "Music Scape";
-  updates[`/${projectIndexThree}/id`] = "project-three";
-  updates[`/${projectIndexThree}/img`] = "assets/musicScapeimg.png";
-  updates[`/${projectIndexThree}/subheading`] = "React | CSS | JSX";
-  updates[`/${projectIndexThree}/description`] =
+  updates[`/${projectIndexOne}/title`] = "Music Scape";
+  updates[`/${projectIndexOne}/id`] = "project-three";
+  updates[`/${projectIndexOne}/img`] = "assets/musicScapeimg.png";
+  updates[`/${projectIndexOne}/subheading`] = "React | CSS | JSX";
+  updates[`/${projectIndexOne}/description`] =
     "A React app that allows users to discover, explore, and engage with various music events, incorporates user authentication and gives users a unique experience, try it out!";
-    updates[`/${projectIndexThree}/git`] =
+    updates[`/${projectIndexOne}/git`] =
       "https://github.com/toritsevalerie/Music-Scape-App";
-    updates[`/${projectIndexThree}/link`] =
+    updates[`/${projectIndexOne}/link`] =
       "https://music-scape-app-main.netlify.app/";
 
   update(projectRef, updates)
@@ -40,25 +40,28 @@ projectThree();
 
 const projectUpdates = () => {
   const updates = {};
-  const projectIndexOne = "1";
+  const projectIndexTwo = "1";
   const projectIndexThree = "2";
 
-  updates[`/${projectIndexOne}/title`] = "The Film Factory";
-  updates[`/${projectIndexOne}/subheading`] = "React | CSS | JSX";
-  updates[`/${projectIndexOne}/description`] =
+  updates[`/${projectIndexTwo}/title`] = "The Film Factory";
+  updates[`/${projectIndexTwo}/subheading`] = "React | CSS | JSX";
+  updates[`/${projectIndexTwo}/description`] =
     "A React app made with other developers that allows users to discover foreign movies, users can search using their preferred movies as references and save their searches along with favorite movies for future reference";
-  updates[`/${projectIndexOne}/git`] =
+  updates[`/${projectIndexTwo}/git`] =
     "https://github.com/francella-toritse-wilson/the-film-factory";
-  updates[`/${projectIndexOne}/link`] = "https://ftw-project-four.netlify.app/";
-  updates[`/${projectIndexOne}/img`] = "assets/filmFactoryImg.png";
-  updates[`/${projectIndexOne}/alt`] =
+  updates[`/${projectIndexTwo}/link`] = "https://ftw-project-four.netlify.app/";
+  updates[`/${projectIndexTwo}/img`] = "assets/filmFactoryImg.png";
+  updates[`/${projectIndexTwo}/id`] = "project-two";
+  updates[`/${projectIndexTwo}/alt`] =
     "an image showing a screenshot of the film facotry app as an image preview";
+  
 
   updates[`/${projectIndexThree}/git`] =
     "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2";
   updates[`/${projectIndexThree}/link`] =
     "https://neon-medovik-43961c.netlify.app/";
   updates[`/${projectIndexThree}/title`] = "Pronia Project";
+  updates[`/${projectIndexThree}/id`] = "project-one";
   updates[`/${projectIndexThree}/subheading`] = "HTML| CSS | JAVASCRIPT";
   updates[`/${projectIndexThree}/description`] =
     "An e-commerce plant website created using HTML, CSS, SASS & JAVASCRIPT.";

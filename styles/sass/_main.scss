@@ -116,20 +116,20 @@
 }
 
 .about-me h2 {
-    font-weight: bold;
-    
-    padding: 100px 0px 30px 0px;
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    justify-content: center;
-  }
-  .pronounciation { 
-    text-align: center;
-    font-style: italic;
-    font-weight: 600;
-    text-decoration: underline;
-  }
+  font-weight: bold;
+
+  padding: 100px 0px 30px 0px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  justify-content: center;
+}
+.pronounciation {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 .about-me-section-image-container {
   width: 40%;
@@ -145,7 +145,6 @@
   }
 }
 
-
 .about-me-section-text-container {
   width: 60%;
   height: 502px;
@@ -160,7 +159,7 @@
     padding: 0px 15px 10px 15px;
     text-align: left;
     line-height: 30px;
-    span { 
+    span {
       font-style: italic;
     }
   }
@@ -243,32 +242,78 @@ button:hover {
 button:active {
   transform: translateY(5px);
 }
-
+@media (max-width: 1230px) {
+  .about-me-section-text-container {
+    padding-left: 30px;
+  }
+}
 @media (max-width: 1200px) {
   .projects .text-container {
     padding-left: 50px;
   }
 }
+
+@media (max-width: 1200px) {
+  .about-me-section-image-container img {
+    width: 333px;
+    height: 333px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-me-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .about-me-section-text-container { 
+      padding-left: 0px;
+    }
+    p{ 
+      text-align: center;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .projects .project-one .image-container,
-  .projects .project-one .arrow-icon,
   .projects .project-two .image-container,
-  .projects .project-two .arrow-icon {
+  .projects .project-three .image-container {
     display: none;
   }
   .projects .text-container {
     padding-left: 0px;
     border: 1px solid $secondaryGreen;
+
     border-radius: 5px;
     width: auto;
   }
+  .projects .project-three .text-container {
+    background: url(/assets/musicScapeimg.png);
+  }
+  .projects .project-one .text-container {
+    background: url(/assets/proniaImg.png);
+  }
+
+  .projects .project-two .text-container {
+    background: url(/assets/filmFactoryImg.png);
+  }
   .project-two p,
   .project-one p,
+  .project-three p,
   .project-title,
   .project-heading,
   .project-buttons {
     padding: 10px 50px;
     text-align: center;
+  }
+}
+@media (max-width: 624px) {
+  .about-me .about-me-section-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   
   }
 }
 @media (max-width: 600px) {
