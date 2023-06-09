@@ -130,11 +130,6 @@ get(projectRef).then((snapshot) => {
 
 /* 
 STRETCH GOALS: 
-1. Re design the projects section (take away arrow, add project type: design, webdev etc, add other projects)
-2. Footer - add social media icons 
-3. Add About Section is contact form area 
-4. Add side nav (like jess) when users can't see navigation after scrolling (on scroll turn menu into hamburger like menu)
-3. ADD READ ME FILE TO THIS AND OTHER REPOSITORIES + READ ME FILE PROFILE 
 4.5. Add mobile navigation function on click drop down menu 
 5. Loading state on submit to indicate submission has been made 
 6. Icon Profile Image (draw myself)
@@ -143,5 +138,4 @@ STRETCH GOALS:
 9. Fix spacing in skills&tools, more centered 
 10. View Projects (make the word View projects bounce too)
 11. Skills & Tools, UX/UI design make space between icon and words 
-12. Change the url name to toritsevalerietuedor.com
  */

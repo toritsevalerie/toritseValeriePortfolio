@@ -7,8 +7,37 @@ header {
   background-color: $greenishWhite;
   //background-image: url(/assets/background.png);
 }
-.hamburger-menu { 
+.hamburger-menu {
   display: none;
+}
+.drop-down-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $fadedGreen;
+  width: 100%;
+  ul {
+    padding: 0px;
+  }
+  li {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+}
+.drop-down-nav li {
+  margin: 0px 0px 10px 0px;
+}
+
+.drop-down-menu li :hover {
+  color: white;
 }
 nav {
   display: flex;
@@ -249,18 +278,19 @@ h1 {
 
 @media (max-width: 630px) {
   .nav-general,
-  .nav-resume,
-  .nav-contact {
+  .nav-contact,
+  .nav-resume {
     display: none;
   }
-  nav { 
+  nav {
     padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
   }
   .hamburger-menu {
     display: block;
     margin: 0 auto;
     border: none;
     background-color: $greenishWhite;
-
   }
 }
