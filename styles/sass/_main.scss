@@ -49,7 +49,9 @@
 
 .projects .project-one,
 .projects .project-two,
-.projects .project-three {
+.projects .project-three,
+.projects .project-four,
+.projects .project-five {
   display: flex;
   justify-content: center;
 
@@ -107,9 +109,7 @@
 .arrow-icon {
   position: absolute;
 }
-.about-me {
-  // background-color: $decorativeWhite;
-}
+
 .about-me .about-me-section-container {
   display: flex;
   padding-bottom: 100px;
@@ -261,15 +261,15 @@ button:active {
 }
 
 @media (max-width: 1000px) {
-  .about-me-section-container{
+  .about-me-section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .about-me-section-text-container { 
+    .about-me-section-text-container {
       padding-left: 0px;
     }
-    p{ 
+    p {
       text-align: center;
     }
   }
@@ -278,7 +278,9 @@ button:active {
 @media (max-width: 800px) {
   .projects .project-one .image-container,
   .projects .project-two .image-container,
-  .projects .project-three .image-container {
+  .projects .project-three .image-container,
+  .projects .project-four .image-container,
+  .projects .project-five .image-container {
     display: none;
   }
   .projects .text-container {
@@ -289,18 +291,27 @@ button:active {
     width: auto;
   }
   .projects .project-three .text-container {
-    background: url(/assets/musicScapeimg.png);
+    background: url(/assets/filmFactoryImg.png);
   }
   .projects .project-one .text-container {
-    background: url(/assets/proniaImg.png);
+    background: url(/assets/musicScapeimg.png);
   }
 
   .projects .project-two .text-container {
-    background: url(/assets/filmFactoryImg.png);
+    background: url(/assets/soonCome.png);
   }
+  .projects .project-four .text-container {
+    background: url(/assets/comingSoon.png);
+  }
+  .projects .project-five .text-container {
+    background: url(/assets/proniaImg.png);
+  }
+
   .project-two p,
   .project-one p,
   .project-three p,
+  .project-four p,
+  .project-five p,
   .project-title,
   .project-heading,
   .project-buttons {
@@ -309,11 +320,10 @@ button:active {
   }
 }
 @media (max-width: 624px) {
-  .about-me .about-me-section-container  {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-   
+  .about-me .wrapper {
+    .about-me-section-text-container {
+      width: fit-content;
+    }
   }
 }
 @media (max-width: 600px) {
@@ -324,6 +334,7 @@ button:active {
     padding: 0px 20px;
   }
 }
+
 
 @media (max-width: 450px) {
   .skills .skill-icon-list {

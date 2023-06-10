@@ -722,7 +722,9 @@ h1 {
 
 .projects .project-one,
 .projects .project-two,
-.projects .project-three {
+.projects .project-three,
+.projects .project-four,
+.projects .project-five {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,7 +992,9 @@ button:active {
 @media (max-width: 800px) {
   .projects .project-one .image-container,
   .projects .project-two .image-container,
-  .projects .project-three .image-container {
+  .projects .project-three .image-container,
+  .projects .project-four .image-container,
+  .projects .project-five .image-container {
     display: none;
   }
   .projects .text-container {
@@ -1000,17 +1004,25 @@ button:active {
     width: auto;
   }
   .projects .project-three .text-container {
-    background: url(/assets/musicScapeimg.png);
+    background: url(/assets/filmFactoryImg.png);
   }
   .projects .project-one .text-container {
-    background: url(/assets/proniaImg.png);
+    background: url(/assets/musicScapeimg.png);
   }
   .projects .project-two .text-container {
-    background: url(/assets/filmFactoryImg.png);
+    background: url(/assets/soonCome.png);
+  }
+  .projects .project-four .text-container {
+    background: url(/assets/comingSoon.png);
+  }
+  .projects .project-five .text-container {
+    background: url(/assets/proniaImg.png);
   }
   .project-two p,
   .project-one p,
   .project-three p,
+  .project-four p,
+  .project-five p,
   .project-title,
   .project-heading,
   .project-buttons {
@@ -1019,10 +1031,10 @@ button:active {
   }
 }
 @media (max-width: 624px) {
-  .about-me .about-me-section-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .about-me .wrapper .about-me-section-text-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media (max-width: 600px) {
