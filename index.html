@@ -14,11 +14,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Rubik:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/6f8a15cb49.js"
@@ -194,69 +195,84 @@
           </div>
         </div>
       </section>
-
       <section class="contact" id="contact">
         <div class="wrapper">
           <div class="form-contact-container">
             <form action="" method="POST" name="my-contact-form">
-              <h2 class="form-title">Keep in Touch?</h2>
-              <div class="contact-details">
-                <ul>
-                  <li>
-                    <a href="https://github.com/toritsevalerie" target="_blank"
-                      ><i class="fa-brands fa-github fa-2x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/toritsetuedor/"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin fa-2x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/toritsevalerie/"
-                      target="_blank"
-                      ><i class="fa-brands fa-instagram fa-2x"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                Thank you for taking the time to look through my portfolio! If
-                you're interested in staying in touch, connect with me via my
-                socials or leave a message.
-              </p>
-              <div class="name-email-container">
-                <div class="name-field">
-                  <label for="user-name">Name</label>
-                  <input type="text" id="user-name" name="user-name" />
-                </div>
-                <div class="email-field">
-                  <label for="email-address">Email</label>
-                  <input type="text" id="email-address" name="email-address" />
+              <div class="form-text-container">
+                <h2 class="form-title">KEEP IN TOUCH</h2>
+                <p>
+                  Thank you for taking the time to look through my portfolio! If
+                  you're interested in staying in touch, connect with me via my
+                  socials or leave a message.
+                </p>
+                <div class="contact-details">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/toritsevalerie"
+                        target="_blank"
+                        ><i class="fa-brands fa-github fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/toritsetuedor/"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/toritsevalerie/"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram fa-2x"></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+              <div class="form-container">
+                <div class="name-email-container">
+                  <div class="name-field">
+                    <label for="user-name">Name</label>
+                    <input
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      required
+                    />
+                  </div>
+                  <div class="email-field">
+                    <label for="email-address">Email</label>
+                    <input
+                      type="text"
+                      id="email-address"
+                      name="email-address"
+                      required
+                    />
+                  </div>
+                </div>
 
-              <div class="message-field">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
+                <div class="message-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit">Submit</button>
               </div>
-              <button type="submit">Submit</button>
             </form>
           </div>
         </div>
       </section>
-
       <footer>
         <p>Built in 2023 by Toritse-Valerie Tuedor</p>
       </footer>
