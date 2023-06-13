@@ -1,0 +1,11 @@
+@import "variables";
+
+
+body {
+  font-family: $primaryFont;
+}
+
+html{
+   scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}

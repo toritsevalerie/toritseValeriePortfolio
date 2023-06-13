@@ -264,6 +264,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
 header {
   background-color: #f5f5eb;
 }
@@ -309,6 +315,16 @@ header {
   color: white;
 }
 
+.close-button {
+  margin-left: auto;
+  padding: 10px 20px;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  color: white;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +342,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav-general a:hover {
+  color: #50733f;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .nav-general,
@@ -465,6 +487,20 @@ nav {
 .banner {
   padding-top: 150px;
   padding-bottom: 50px;
+}
+
+.theme-toggle {
+  margin: 0px 20px;
+  border-radius: 100px;
+  border: none;
+  color: #50733f;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+  border: 2px solid #50733f;
 }
 
 h1,
