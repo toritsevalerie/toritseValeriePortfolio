@@ -3,10 +3,15 @@
 
 body {
   font-family: $primaryFont;
-  // font-weight: 500;
+  font-weight: 450;
 }
+
 
 html{
    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+}
+
+p { 
+  font-weight: 430;
 }

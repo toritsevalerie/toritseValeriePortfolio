@@ -262,12 +262,17 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  font-weight: 450;
 }
 
 html {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+}
+
+p {
+  font-weight: 430;
 }
 
 header {
@@ -532,7 +537,7 @@ h1 {
 .main-subheading {
   margin: 0px;
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .about-me-container {
@@ -702,30 +707,48 @@ h1 {
 }
 
 .skills {
-  background-color: #eceddd;
+  background-color: #f5f5eb;
 }
 
-.skills ul {
-  margin: 0px;
+.skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.skills .subheading {
-  text-align: center;
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
-
-.skills .skill-icon-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  justify-items: center;
+.skills-container .front-end-container {
+  width: 50%;
+  border: solid #D2D3C3 2px;
+  border-radius: 20px;
+  background-color: #D2D3C3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 40px 100px 40px;
 }
-
-.skills .skill-icon-list li {
-  list-style: none;
+.skills-container .designer-container {
+  width: 50%;
+  border: solid #D2D3C3 2px;
+  border-radius: 20px;
+  background-color: #D2D3C3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,8 +761,88 @@ h1 {
           align-items: center;
 }
 
+hr {
+  height: 789px;
+  border: 2px solid #f5f5eb;
+  margin: 0 10px;
+}
+
+.skills ul {
+  margin: 0px;
+}
+
+.skills .front-end-container p,
+.skills .designer-container p {
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.skills .front-end-container h3,
+.skills .designer-container h3 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skills .front-end-container .img-heading,
+.skills .designer-container .img-heading {
+  width: 100px;
+  border: solid 2px #50733f;
+  border-radius: 130px;
+  margin: 30px 0px 10px 0px;
+}
+
+.skills .subheading {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skills .skill-icon-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px 100px 40px;
+}
+
+.skills .skill-icon-list-design {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px 100px 40px;
+}
+
+.skills .skill-icon-list li,
+.skills .skill-icon-list-design li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.skill-icon-list .fa-brands,
+.skill-icon-list .fa-solid {
+  font-size: 2rem;
+}
+
 .projects h2,
-.skills h2,
 .contact h2 {
   padding: 100px 0px 30px 0px;
   font-weight: 500;
@@ -753,7 +856,7 @@ h1 {
 
 .paired-programming-icon,
 .project-management-icon {
-  width: 64px;
+  width: 54px;
 }
 
 .projects .project-one,
@@ -844,7 +947,6 @@ h1 {
 }
 
 .about-me h2 {
-  font-weight: bold;
   padding: 100px 0px 30px 0px;
   text-align: center;
   margin-top: 2px;
@@ -955,7 +1057,6 @@ h1 {
 }
 
 .contact h2 {
-  font-weight: 500;
   text-align: center;
 }
 

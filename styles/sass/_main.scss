@@ -7,31 +7,99 @@
 }
 
 .skills {
-  background-color: $decorativeWhite;
+  background-color: $greenishWhite;
+}
+.skills .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .front-end-container {
+    width: 50%;
+    border: solid #D2D3C3 2px;
+    border-radius: 20px;
+    background-color: #D2D3C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .designer-container {
+    width: 50%;
+    border: solid #D2D3C3 2px;
+    border-radius: 20px;
+    background-color: #D2D3C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+hr {
+  height: 789px;
+  border: 2px solid $greenishWhite;
+  margin: 0 10px;
 }
 .skills ul {
   margin: 0px;
 }
+.skills .front-end-container p,
+.skills .designer-container p {
+  padding: 5px 20px;
+  text-align: center;
+}
+.skills .front-end-container h3,
+.skills .designer-container h3 {
+  padding-top: 20px;
+  font-size: 18px;
+  // font-weight: 415;
+  font-weight: bold;
+}
+.skills .front-end-container .img-heading,
+.skills .designer-container .img-heading {
+  width: 100px;
+  border: solid 2px $secondaryGreen;
+  border-radius: 130px;
+  margin: 30px 0px 10px 0px;
+}
+
 
 .skills .subheading {
   text-align: center;
+  padding-top: 30px;
+  // color: $secondaryGreen;
 }
 .skills .skill-icon-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   justify-items: center;
   align-items: center;
-  padding: 40px 40px 100px 40px;
+  padding: 10px 40px 100px 40px;
 }
-.skills .skill-icon-list li {
+.skills .skill-icon-list-design {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 40px 100px 40px;
+}
+.skills .skill-icon-list li,
+.skills .skill-icon-list-design li {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
+}
+.skill-icon-list .fa-brands,
+.skill-icon-list .fa-solid {
+  font-size: 2rem;
 }
 .projects h2,
-.skills h2,
 .contact h2 {
   padding: 100px 0px 30px 0px;
   font-weight: 500;
@@ -44,7 +112,7 @@
 
 .paired-programming-icon,
 .project-management-icon {
-  width: 64px;
+  width: 54px;
 }
 
 .projects .project-one,
@@ -116,8 +184,6 @@
 }
 
 .about-me h2 {
-  font-weight: bold;
-
   padding: 100px 0px 30px 0px;
   text-align: center;
   margin-top: 2px;
@@ -214,7 +280,6 @@
   }
 }
 .contact h2 {
-  font-weight: 500;
   text-align: center;
 }
 
@@ -335,7 +400,6 @@ button:active {
     padding: 0px 20px;
   }
 }
-
 
 @media (max-width: 450px) {
   .skills .skill-icon-list {
