@@ -1,8 +1,5 @@
 @import "variables";
 
-body {
-  font-family: $primaryFont;
-}
 header {
   background-color: $greenishWhite;
   //background-image: url(/assets/background.png);
@@ -39,15 +36,26 @@ header {
 .drop-down-menu li :hover {
   color: white;
 }
+.close-button {
+  margin-left: auto;
+  padding: 10px 20px;
+}
+.close-button:hover {
+  cursor: pointer;
+  color: white;
+}
 nav {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   padding: 0px, 40px;
 }
 .nav-general {
   display: flex;
+}
+.nav-general a:hover {
+  color: $secondaryGreen;
+  transition: 0.5s ease-in;
 }
 .nav-general,
 .nav-contact,
@@ -93,6 +101,7 @@ nav {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -134,10 +143,24 @@ nav {
     color: $secondaryGreen;
   }
 }
+
 .banner {
   padding-top: 150px;
   padding-bottom: 50px;
 }
+.theme-toggle {
+  margin: 0px 20px;
+  border-radius: 100px;
+  border: none;
+  color: $secondaryGreen;
+  background-color: black;
+  padding: 10px 20px;
+}
+.theme-toggle:hover{ 
+  cursor: pointer;
+  border: 2px solid $secondaryGreen;
+}
+
 h1,
 h2 {
   text-align: left;
@@ -164,7 +187,7 @@ h1 {
 .main-subheading {
   margin: 0px;
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
 }
 .about-me-container {
   display: flex;
@@ -230,6 +253,7 @@ h1 {
   color: $colourBlack;
   text-decoration: none;
 }
+
 @media (max-width: 1220px) {
   .nav-resume,
   .nav-contact {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToritseValerie Portfolio</title>
+    <title>Toritse-Valerie Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +14,13 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Rubik:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/6f8a15cb49.js"
       crossorigin="anonymous"
@@ -33,8 +36,8 @@
           <div class="drop-down-menu">
             <div class="close-button"><i class="fa-solid fa-x"></i></div>
             <ul class="drop-down-contact">
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
             <ul class="drop-down-nav">
               <li class="drop-down-home"><a href="index.html">Home</a></li>
               <li class="drop-down-projects">
@@ -43,31 +46,43 @@
               <li class="drop-down-about"><a href="#about-me">About</a></li>
             </ul>
             <ul class="drop-down-resume">
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
+              <li>
+                <a
+                  href="assets/ToritseValerieTuedorResume-3.pdf"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+            </ul>
           </div>
           <ul class="nav-resume">
-            <li><a href="resume.html">Resume</a></li>
+            <li>
+              <a href="assets/ToritseValerieTuedorResume-3.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
           </ul>
           <ul class="nav-general">
             <li class="nav-home-button"><a href="index.html">Home</a></li>
             <li class="nav-project-button"><a href="#projects">Projects</a></li>
             <li class="nav-about-button"><a href="#about-me">About</a></li>
           </ul>
-          <ul class="nav-contact">
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="nav-contact-fixed">
+            <ul class="nav-contact">
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-        <!-- <div class="light-dark-toggle">
-          <input id="light-dark" name="light-dark"type="checkbox">
-          <label for="light-dark">
 
-
-          </label>
-        </div> -->
         <div class="banner">
           <div class="about-me-container">
             <div class="about-me-text-container">
+              <button class="theme-toggle set-dark-theme">
+                <i
+                  class="fa-solid fa-moon fa-1.5x"
+                  title="Click for dark theme"
+                ></i>
+              </button>
               <h1>TORITSE-VALERIE TUEDOR</h1>
               <h2 class="main-subheading">
                 Hey there👋🏿 ! My name is Toritse-Valerie. I create,
@@ -94,46 +109,64 @@
     <main>
       <section class="skills" id="skills">
         <div class="wrapper">
-          <div class="text-container">
-            <h2>SKILLS & TOOLS</h2>
-            <p class="subheading">
-              Some of the tools, languages and technologies I use to bring ideas
-              to reality
-            </p>
-            <ul class="skill-icon-list">
-              <li><i class="fa-brands fa-html5 fa-3x"></i> HTML</li>
-              <li><i class="fa-brands fa-css3-alt fa-3x"></i> CSS</li>
-              <li><i class="fa-brands fa-sass fa-3x"></i> Sass</li>
-              <li><i class="fa-brands fa-square-js fa-3x"></i> JavaScript</li>
-              <li><i class="fa-brands fa-react fa-3x"></i> React</li>
-              <li>
-                <img
-                  class="firebase-img-icon"
-                  src="assets/firebase.svg"
-                  alt="firebase icon"
-                />Firebase
-              </li>
-              <li><i class="fa-brands fa-github fa-3x"></i> Git & Github</li>
-              <li>
-                <i class="fa-solid fa-universal-access fa-3x"></i> Accessibility
-              </li>
-              <li><i class="fa-brands fa-figma fa-3x"></i> Figma</li>
-              <li>
-                <img
-                  class="paired-programming-icon"
-                  src="assets/paired-programming.svg"
-                  alt="paired programming/group work icon"
-                />Paired programming
-              </li>
-              <li>
-                <img
-                  class="project-management-icon"
-                  src="assets/project management.svg"
-                  alt="clip board icon to represent project management"
-                />Project Management
-              </li>
-              <li><i class="fa-solid fa-desktop fa-3x"></i> UX/UI Design</li>
-            </ul>
+          <div class="skills-container">
+            <div class="front-end-container">
+              <img class='img-heading' src="/assets/coder.svg" alt="coder icon" />
+              <h3>Front End Developer</h3>
+              <p>
+                I love crafting awesome websites, birthing innovative ideas, and
+                practically designing anything that comes my way!
+              </p>
+              <p class="subheading">Tools & Languages</p>
+              <ul class="skill-icon-list">
+                <li><i class="fa-brands fa-html5 fa-2x"></i> HTML</li>
+                <li><i class="fa-brands fa-css3-alt fa-2x"></i> CSS</li>
+                <li><i class="fa-brands fa-sass fa-2x"></i> Sass</li>
+                <li><i class="fa-brands fa-square-js fa-2x"></i> JavaScript</li>
+                <li><i class="fa-brands fa-react fa-2x"></i> React</li>
+                <li>
+                  <img
+                    class="firebase-img-icon"
+                    src="assets/firebase.svg"
+                    alt="firebase icon"
+                  />Firebase
+                </li>
+                <li><i class="fa-brands fa-github fa-2x"></i> Git & Github</li>
+                <li>
+                  <i class="fa-solid fa-universal-access fa-2x"></i>
+                  Accessibility
+                </li>
+                <li>
+                  <img
+                    class="paired-programming-icon"
+                    src="assets/paired-programming.svg"
+                    alt="paired programming/group work icon"
+                  />Paired programming
+                </li>
+                <!-- <li>
+                  <img
+                    class="project-management-icon"
+                    src="assets/project management.svg"
+                    alt="clip board icon to represent project management"
+                  />Project Management
+                </li> -->
+                <li><i class="fa-solid fa-desktop fa-2x"></i> UX/UI Design</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="designer-container">
+              <img class='img-heading'src="assets/ux.svg" alt="ux icon" />
+              <h3>Designer</h3>
+              <p>
+                I'm all about sweet simplicity, clean design, and getting
+                creative juices flowing with thoughtful and mind-blowing
+                interactions
+              </p>
+              <p class="subheading">Skills & Tools</p>
+              <ul class="skill-icon-list-design">
+                <li><i class="fa-brands fa-figma fa-2x"></i>Figma</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -180,69 +213,84 @@
           </div>
         </div>
       </section>
-
       <section class="contact" id="contact">
         <div class="wrapper">
           <div class="form-contact-container">
             <form action="" method="POST" name="my-contact-form">
-              <h2 class="form-title">Keep in Touch?</h2>
-              <div class="contact-details">
-                <ul>
-                  <li>
-                    <a href="https://github.com/toritsevalerie" target="_blank"
-                      ><i class="fa-brands fa-github fa-2x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/toritsetuedor/"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin fa-2x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/toritsevalerie/"
-                      target="_blank"
-                      ><i class="fa-brands fa-instagram fa-2x"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                Thank you for taking the time to look through my portfolio! If
-                you're interested in staying in touch, connect with me via my
-                socials or leave a message.
-              </p>
-              <div class="name-email-container">
-                <div class="name-field">
-                  <label for="user-name">Name</label>
-                  <input type="text" id="user-name" name="user-name" />
-                </div>
-                <div class="email-field">
-                  <label for="email-address">Email</label>
-                  <input type="text" id="email-address" name="email-address" />
+              <div class="form-text-container">
+                <h2 class="form-title">KEEP IN TOUCH</h2>
+                <p>
+                  Thank you for taking the time to look through my portfolio! If
+                  you're interested in staying in touch, connect with me via my
+                  socials or leave a message.
+                </p>
+                <div class="contact-details">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/toritsevalerie"
+                        target="_blank"
+                        ><i class="fa-brands fa-github fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/toritsetuedor/"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/toritsevalerie/"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram fa-2x"></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+              <div class="form-container">
+                <div class="name-email-container">
+                  <div class="name-field">
+                    <label for="user-name">Name</label>
+                    <input
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      required
+                    />
+                  </div>
+                  <div class="email-field">
+                    <label for="email-address">Email</label>
+                    <input
+                      type="text"
+                      id="email-address"
+                      name="email-address"
+                      required
+                    />
+                  </div>
+                </div>
 
-              <div class="message-field">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
+                <div class="message-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit">Submit</button>
               </div>
-              <button type="submit">Submit</button>
             </form>
           </div>
         </div>
       </section>
-
       <footer>
         <p>Built in 2023 by Toritse-Valerie Tuedor</p>
       </footer>
